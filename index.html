@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Based Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Face API -->
+    <script defer src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Emotion Interactive Website</h1>
+        <div class="video-container">
+            <video id="video" autoplay muted></video>
+        </div>
+        <div class="emotion-status">
+            <p>Current Emotion: <span id="emotion">Loading...</span></p>
+        </div>
+        <div class="content-container">
+            <div id="message-box" class="message-box">
+                <p id="dynamic-message">Welcome! Let me see your expression...</p>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="startButton">Start Experience</button>
+            <button id="toggleMusic">Toggle Music</button>
+        </div>
+    </div>
+    <div id="loading">Loading AI Models...</div>
+</body>
+</html>
